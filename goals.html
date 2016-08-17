@@ -1,3 +1,126 @@
-1. Acing this!!!
-2. Become a JS front end pro!
-3. Next step in developing own app!
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+<title>Vee's Goals</title>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #27111c;
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Cuprum', sans-serif;
+  text-align: center;
+  font-size: 75px;
+  color: #db8b3d;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #db8b3d;
+  margin: 0px 0 70px 0;
+  font-size:20px;
+}
+p {
+  color: rgba(185,158,101,1);
+  background: #27111c;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,.7), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.singapore{
+  background-image: url("http://176.32.230.9/veemercado.com/GA/PreWork/HTML/img/vee-singapore.jpg");
+}
+.thailand{
+  background-image: url("http://176.32.230.9/veemercado.com/GA/PreWork/HTML/img/vee-thailand.jpg");
+}
+.malaysia{
+  background-image: url("http://176.32.230.9/veemercado.com/GA/PreWork/HTML/img/vee-malaysia.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 15px;
+    margin: 10px 0 30px 0;
+  }
+  div {
+    height:200px;
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Vee's Goals</h1>
+<h2>js2syd</h2>
+<div class="singapore">
+  <p>Goal <span class="price">01</span><br />
+  <small>Acing this!!! </small></p>
+</div>
+
+<div class="thailand">
+  <p>Goal <span class="price">02</span><br />
+  <small>Become a JS front end pro!</small></p>
+</div>
+
+<div class="malaysia">
+  <p>Goal <span class="price">03</span><br />
+  <small>Next step in developing own app!</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
